@@ -11,6 +11,13 @@ $(function () {
         scrollTop: $(".packages h2").offset().top
     }, 800);
   });
+  
+  $(".contact__btn").click(function (e){
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(".packages h2").offset().top
+    }, 800);
+  });
 
   $('.accordion__title').click(function () {
     $(".accordion__text").not($(this).next()).slideUp(300);
